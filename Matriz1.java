@@ -12,13 +12,12 @@ public class Matriz1 {
         
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
-            System.out.print("Ingrese valor: ");
-            m[i][j]=sc.nextInt();
+            m[i][j]=(int)(Math.random()*100);
             }
         }
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-            System.out.print("  "+m[i][j]);
+        for(int[] fila:m){
+            for(int elemento:fila){
+            System.out.print(elemento+"  ");
             
             }
              System.out.println();
